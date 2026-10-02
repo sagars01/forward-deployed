@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+
+# Book Bible & writing guide (author workspace, from Notion)
+.claude/
+.remember/
