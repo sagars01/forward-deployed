@@ -1,6 +1,6 @@
 # Forward Deployed
 
-![Cover](assets/cover.png)
+![Cover](book/assets/cover.png)
 
 ---
 
@@ -12,9 +12,9 @@ Forward deployed AI engineers are hired to walk into situations like this one an
 
 ## Before You Begin
 
-- [How to Read This Book](01-how-to-read-this-book.md)
+- [How to Read This Book](book/01-how-to-read-this-book.md)
 - Prologue — What a Forward Deployed Engineer Is *(not yet written)*
-- [The Case — Mehra & Cole LLP](02-the-case-mehra-and-cole.md)
+- [The Case — Mehra & Cole LLP](book/02-the-case-mehra-and-cole.md)
 
 ## Part I — Build: Making AI Work in the Wild
 
