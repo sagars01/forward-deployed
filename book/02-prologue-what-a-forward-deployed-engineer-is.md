@@ -18,13 +18,13 @@ All four are skilled, and all four are doing their jobs properly. But only one o
 
 ## Where the name comes from
 
-"Forward deployed" is a military term. A forward deployed unit is stationed close to where the action is rather than at its home base. Headquarters has the plan, the maps and the long view. The forward position has the terrain.
+"Forward deployed" is a military term. Forward deployment means stationing forces at bases close to where they may be needed, rather than at home.[^military] Headquarters has the plan, the maps and the long view. The forward position has the terrain.
 
 That distinction is the most useful image for understanding the role, and it will come back throughout the book. Every company that builds a general-purpose technology has a headquarters: a product team with a roadmap, an architecture and a picture of what customers need. That picture is a map. Like every map, it is a simplification, and it is wrong in ways that are visible only on the ground. The client's data is messier than the map shows. Their systems are older. Their security rules are stricter. The person who signed the contract is not the person who will use the system, and the person who will use it has reasons of their own to resist it.
 
 A forward deployed engineer works at the forward position. The job has two parts. The first is to win there: to make the technology produce a real result for this client despite everything the map got wrong. The second is to send back corrections to the map, so that headquarters learns what the ground actually looks like and the next deployment starts from a better picture. Engineers who do only the first become expensive custom developers. Engineers who do only the second become product researchers. The role requires both.
 
-Palantir is generally credited with building the role in its modern form, embedding engineers with government and commercial customers whose problems no off-the-shelf product could solve. For years it remained unusual. Generative AI changed that. A large language model is about as general-purpose as a technology gets, which means almost all of its value depends on fitting it to a specific organization's data, workflows and people. From 2024 onwards, AI labs and applied AI companies began hiring forward deployed engineers in large numbers, because they found that the distance between an impressive model and a working deployment was where most of their customers got stuck.
+Palantir, the data analytics company, built the role in its modern form and describes itself as having pioneered it, embedding engineers directly with government and commercial customers to work on their most pressing problems.[^palantir-role] Internally, Palantir calls these engineers "Deltas" and distinguishes them from "Devs", the software engineers who build its platforms. A Dev owns a part of a platform used by every customer; a Delta typically works on a team that supports a single customer.[^palantir-delta] For years the role remained unusual outside Palantir. Generative AI changed that. A large language model is about as general-purpose as a technology gets, which means almost all of its value depends on fitting it to a specific organization's data, workflows and people. In 2025, AI labs including OpenAI, Anthropic and Cohere began rapidly expanding their teams of forward deployed engineers to help customers turn models into working deployments, and job postings for the role rose more than 800 percent between January and September of that year, according to Indeed data reported by the Financial Times.[^ft-surge]
 
 ## Why the role exists
 
@@ -101,3 +101,15 @@ Read it as the briefing pack for your first forward deployment. Headquarters has
 **Definition:** a forward deployed engineer is an engineer who is embedded with a client and accountable for turning a general technology into a measured, lasting outcome for that client, while feeding what they learn back into the product.
 
 **Central image:** headquarters holds the map; the forward position holds the terrain. The job is to win on the ground and send back corrections to the map.
+
+---
+
+## Sources
+
+[^military]: Forward deployment as "the regular assignment of US military forces to bases and facilities" overseas: *Forward Deployment in the 1970's and 1980's*, Defense Technical Information Center report ADA037806. <https://apps.dtic.mil/sti/html/tr/ADA037806/index.html>
+
+[^palantir-role]: Palantir's own job postings state that it "pioneered this unique position, embedding engineers directly with customers." Palantir, *Forward Deployed Software Engineer* (job posting). <https://jobs.lever.co/palantir/8c38feb7-7ca8-429e-9643-efffe2fe0428>. Postings are recruiting copy, so treat this as Palantir's account of its own history.
+
+[^palantir-delta]: Palantir, *Dev versus Delta: Demystifying engineering roles at Palantir*, Palantir Blog. <https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87>
+
+[^ft-surge]: Financial Times reporting on FDE hiring at OpenAI, Anthropic and Cohere and on Indeed postings data (January to September 2025), as summarized in eWeek, *Why Forward-Deployed Engineers Are in High Demand*. <https://www.eweek.com/news/openai-anthropic-cohere-ai-hiring/>. Some secondary reports describe the 800 percent figure as covering customer-facing AI roles more broadly, not only roles titled forward deployed engineer.

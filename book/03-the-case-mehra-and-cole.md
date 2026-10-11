@@ -70,7 +70,7 @@ The fourth conversation was with Rohan Desai, the chief information officer, who
 
 "If any vendor's model trains on a client's data room, we are finished," he said. "I need that in writing, and I need to be able to prove it to a client's auditor." He was also tired. "The last vendor took four months to clear our security review, for something nobody ended up using. I'm not doing that again."
 
-The fifth conversation, by video from New York, was with Daniel Cole. American clients were now asking about AI use in their requests for proposals, and the American Bar Association's 2024 formal opinion on generative AI had made the professional obligations explicit: lawyers had to understand the tools they used, protect client confidentiality when using them, and bill fairly for work a tool had made faster.
+The fifth conversation, by video from New York, was with Daniel Cole. American clients were now asking about AI use in their requests for proposals, and the American Bar Association's 2024 formal opinion on generative AI had made the professional obligations explicit: lawyers had to understand the tools they used, protect client confidentiality when using them, and bill fairly for work a tool had made faster.[^aba-512]
 
 "Our clients will want us to use AI, and they will want the savings," Daniel said. "The real question is whether we keep any of them." He had one more requirement. "Whatever you build has to end in a report that a New York general counsel will sign off on. Not a spreadsheet. Not a dashboard. A report."
 
@@ -245,3 +245,9 @@ Off stage: Kestrel Ridge Capital, the PE client lost to a rival firm that promis
 2. Nobody has seen how a PE client actually reads a red-flag report.
 3. The 18-day median and associate hours are estimates, not measurements.
 4. Anjali's reason for wanting this done properly, which she would give only in person.
+
+---
+
+## Sources
+
+[^aba-512]: American Bar Association Standing Committee on Ethics and Professional Responsibility, *Formal Opinion 512: Generative Artificial Intelligence Tools*, July 29, 2024. It addresses competence, confidentiality, communication, supervision, candor to the tribunal and reasonable fees when lawyers use generative AI. Copy of the opinion hosted by the Minnesota Lawyers Professional Responsibility Board: <https://lprb.mncourts.gov/Pages/Formal%20Opinion%20512%20-%20Generative%20Artificial%20Intelligence%20Tools.pdf>. Summary: National Law Review, *American Bar Association Issues Formal Opinion on Use of Generative AI Tools*, <https://natlawreview.com/article/american-bar-association-issues-formal-opinion-use-generative-ai-tools>.
