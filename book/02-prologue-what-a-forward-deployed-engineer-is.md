@@ -1,6 +1,10 @@
 # Prologue — What a Forward Deployed Engineer Is
 
-A regional insurer wants to use AI to process claims. Its claims handlers are drowning, its customers wait three weeks for a decision, and its board has read that a language model can read a claim form faster than any person. The insurer invites four people to its head office on the same Monday morning.
+A forward deployed engineer is an engineer who works inside a client's organization, after the sale, and is held responsible for the result the client paid for. Many people build software, sell it or advise on it. What sets this role apart is ownership: the engineer owns the client's outcome, in the client's environment, and the outcome has to last after the engineer has gone.
+
+That ownership has three consequences, and almost everything in this book follows from them. The technology has to be made to work on the client's real data, inside the client's real systems and constraints, not in a demo. The people who will use it and pay for it have to trust it enough to change how they work, because a system nobody believes in produces no outcome. And the result has to survive without the engineer, so that the client can run it and the engineer's own company can learn from it. The section on why the role exists gives these three their names.
+
+The clearest way to see what that ownership means is to put the role beside three that resemble it and lack it. A regional insurer wants to use AI to process claims. Its claims handlers are drowning, its customers wait three weeks for a decision, and its board has read that a language model can read a claim form faster than any person. The insurer invites four people to its head office on the same Monday morning.
 
 The first is a software engineer from a company that sells a claims automation product. She asks for the insurer's requirements, notes which ones the product already meets, and files the rest as feature requests for her team back at headquarters. She will be gone by lunch. Whatever she builds next will be built for all of her company's customers at once, and this insurer will be one of them.
 
@@ -10,7 +14,7 @@ The third is a management consultant. She interviews the head of claims, analyze
 
 The fourth is a forward deployed engineer. He asks to sit with a claims handler for a day before anyone discusses requirements. By Wednesday he has found that the claim forms are the easy part, and that most of the delay comes from chasing medical reports that arrive as faxes and photographs. By Friday he has a rough prototype reading those reports on a laptop inside the insurer's network. He will still be there in three months, and the question he will be judged on is not whether the product fits, whether the recommendation is sound or whether the code is clean. It is whether claims are decided faster, and whether they stay faster after he leaves.
 
-All four are skilled, and all four are doing their jobs properly. But only one of them owns the outcome at this client, in this environment, with these people. That is the role this book prepares you for.
+All four are skilled, and all four are doing their jobs properly. But only one of them owns the outcome at this client, in this environment, with these people, and only one will be judged on whether it lasts. The rest of this prologue explains where the role's name comes from, why the role exists, how it differs from the roles it resembles and what an interviewer is looking for in someone who can do it. The rest of the book prepares you to do it.
 
 ## Where the name comes from
 
