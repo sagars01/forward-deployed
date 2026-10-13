@@ -17,14 +17,14 @@ Each section below adds one branch. By the end, you should be able to explain th
 
 ## One client, four visitors
 
-The fastest way to see ownership is to watch who has it and who does not. A regional insurer wants AI to process claims. Customers wait three weeks for a decision. The insurer invites four people in on the same Monday.
+The fastest way to see ownership is to watch who has it and who does not. Take the law firm you will meet in the Case. Mehra & Cole wants AI for legal due diligence, the contract review before every acquisition. Its red-flag report, the list of risks a buyer reads before signing, takes eighteen working days, and a rival just won a client by promising five. The firm invites four people in on the same Monday.
 
-- **Software engineer** (product company): collects requirements, files the gaps as feature requests, and is gone by lunch. Builds for all customers at once.
-- **Solutions architect** (same company): proves the product fits, draws the integration diagram, estimates the effort. Moves on once the insurer signs.
-- **Management consultant**: analyzes three years of claims and recommends what to automate first. Does not build it.
-- **Forward deployed engineer**: sits with a claims handler for a day. Finds the real delay is chasing medical reports sent as faxes and photos. Has a rough prototype inside the insurer's network by Friday. Still there in three months.
+- **Software engineer** (legal AI vendor): collects requirements, files the gaps as feature requests, and is gone by lunch. Builds for all customers at once.
+- **Solutions architect** (same vendor): proves the product fits, draws the integration diagram, estimates the effort. Moves on once the firm signs.
+- **Management consultant**: analyzes three years of deals and recommends which document types to automate first. Does not build it.
+- **Forward deployed engineer**: sits with a junior associate for a day. Finds the real delay is not reading clauses but finding them: amendments filed apart from the agreements they change, scans named scan_0041.pdf. Has a rough prototype linking amendments to their agreements, inside the firm's network, by Friday. Still there in three months.
 
-All four do their jobs well. Only the last one is judged on whether claims are actually decided faster, and whether they stay faster after he leaves. That difference, ownership of the outcome, is the root of the tree. Every other branch in this Prologue grows from it.
+All four do their jobs well. Only the last one is judged on whether red-flag reports actually arrive faster, and whether they stay faster after the engineer leaves. That difference, ownership of the outcome, is the root of the tree. Every other branch in this Prologue grows from it.
 
 ## Where the name comes from: the map and the terrain
 
@@ -44,7 +44,7 @@ Do only the first job and you become an expensive custom developer. Do only the 
 
 A client buys technology to get an outcome. Three gaps sit between the two, and every one must be closed before the outcome appears.
 
-- **Build gap:** the technology must work on the client's real data, in the client's real environment. Example: reading scanned faxes inside a network the data cannot leave, with every access logged.
+- **Build gap:** the technology must work on the client's real data, in the client's real environment. Example: reading scanned contracts inside a network the data cannot leave, with every access logged.
 - **Belief gap:** the people who use it and pay for it must trust it enough to change how they work. Experts do not trust what they cannot check. Managers do not fund what they cannot measure.
 - **Lasting gap:** the result must survive without the person who built it. The client runs it, headquarters learns from it, and it holds together when something breaks.
 
