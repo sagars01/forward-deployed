@@ -1,106 +1,131 @@
 # The Case — Mehra & Cole LLP
 
-Mehra & Cole LLP did not set out to buy artificial intelligence. It set out to stop losing money on work it was good at.
+Mehra & Cole LLP did not set out to buy artificial intelligence. It set out to stop losing money on work it was good at. This is the briefing pack for your first deployment: the client, the real problem, and the contract you will be held to.
 
-By the spring the firm approached Inherent Labs, its corporate practice had lost two pitches in six months. It had written off more of its due diligence work than in any year its partners could remember, and it had come within a fortnight of a serious embarrassment on a deal it had otherwise run well. None of these events was a crisis on its own. Together they convinced the managing partner that the way the firm reviewed documents for its deals no longer worked, and that she did not fully understand why.
+```
+Mehra & Cole: a diligence model that no longer pays
+├── The firm:                 a mid-market M&A practice built on due diligence
+├── What they asked for:      "an AI tool" (a solution, not a problem)
+├── Five conversations:       trust, people, money, security, the report
+├── The problem underneath:   one cause, four consequences, the constraints
+├── The SOW:                  what will be done, measured and checked
+├── What was promised:        one goal, four criteria, explicit limits
+└── Your assignment:          the engagement becomes yours on Monday
+```
 
-This part of the book tells the story of that engagement up to the morning it becomes yours. It describes the firm, the problem as the firm first described it, the problem as it turned out to be, and the agreement Inherent Labs and the firm signed to address it. It deliberately stops short of any solution. Every technical chapter that follows builds a part of that solution, and every chapter after them tests whether the firm will believe in it. You will return to the people and numbers here throughout the book, so read this the way you would read a client briefing pack before your first day on site.
+Each section fills one branch. The case stops short of any solution; later chapters build it.
 
 ## The firm
 
-Anjali Mehra founded the firm in Mumbai in the 1990s as a four-lawyer corporate boutique. Daniel Cole, a New York-qualified lawyer who had spent a decade advising American companies investing in India, joined as a name partner in 2011 to open an office in Manhattan. Today the firm has 320 lawyers and 41 partners across Mumbai, Delhi, Bengaluru and New York.
+By the time it approached Inherent Labs, the firm had lost two pitches in six months, written off record diligence work, and nearly been embarrassed on a deal. Together these convinced the managing partner that its document review no longer worked, and that she did not fully understand why.
 
-Its largest practice is Corporate and M&A, with about 110 lawyers working on roughly sixty transactions a year. Most are mid-market deals, with enterprise values between $20 million and $300 million. Two-thirds involve private equity funds as buyers or sellers, and about two in five are cross-border deals between India and the United States. The practice is respected, profitable on paper and, as the managing partner was beginning to suspect, quietly becoming less profitable every year.
+- **History:** Anjali Mehra founded it in Mumbai in the 1990s as a four-lawyer corporate boutique. Daniel Cole, a New York lawyer who advised American companies investing in India, joined as name partner in 2011 to open Manhattan.
+- **Size:** 320 lawyers, 41 partners; Mumbai, Delhi, Bengaluru and New York.
+- **Core practice:** Corporate and M&A, about 110 lawyers, roughly sixty mid-market deals a year ($20 million to $300 million). Two-thirds involve private equity; about two in five are India–US. Respected, and quietly less profitable every year.
 
-At the center of almost every one of those transactions sits a piece of work called **legal due diligence**. If you have never worked near a law firm, it is worth understanding before anything else in this book, because the entire engagement turns on it.
+### What due diligence is
 
-Before a buyer acquires a company, the buyer's lawyers review the target company's documents to find anything that should change the price, the structure of the deal or the decision to proceed at all. The seller places the documents in a virtual data room, a secure online repository, and grants the buyer's advisers access for a limited period. A mid-market data room typically holds between 3,000 and 8,000 documents: corporate records, licenses, employment agreements, litigation files, property documents and, above all, commercial contracts with customers and suppliers.
+The engagement turns on **legal due diligence**: the buyer's lawyers review the target's documents for anything that should change the price, structure or decision to proceed.
 
-The lawyers are looking for clauses that create risk for a new owner. The most important is the **change of control** clause, which allows the other party to a contract to terminate or renegotiate it if ownership of the company changes. An acquisition is, by definition, a change of ownership, so a change of control clause in a contract with a major customer can put a large share of the target's revenue at risk on the day the deal closes. Lawyers also look for restrictions on assigning contracts, exclusivity commitments, non-compete obligations, unlimited liabilities, unusual termination rights and dozens of similar provisions.
+- **The data room:** a secure online repository of the target's documents, with time-limited access. A mid-market room holds 3,000 to 8,000, mostly commercial contracts.
+- **The key clause:** **change of control**, letting a counterparty terminate or renegotiate if ownership changes. With a major customer, it can put much of the revenue at risk on closing day. Also: assignment limits, exclusivity, non-competes, unlimited liabilities, unusual termination rights.
+- **The output:** a **red-flag report** listing each material issue, where it was found, how serious it is and the remedy (price adjustment, indemnity, or a consent condition before closing). It is what a PE investment committee reads before committing hundreds of millions.
+- **The Mehra & Cole pipeline:** a partner leads, a senior associate runs the work, and four to six juniors split the data room, logging findings in **the tracker**, a shared spreadsheet with one row per document and a column per issue type. The senior associate consolidates; the partner reviews what looks material.
+- **The clock:** a median eighteen working days to a partner-ready report (firm estimate), much of it at night.
 
-The output is a **red-flag report**: a document listing every material issue found, where it was found, how serious it is and what the buyer should do about it. The remedy might be a price adjustment, a specific indemnity from the seller, or a condition that the seller obtain the counterparty's consent before closing. The red-flag report is what the client pays for, and it is what a private equity investment committee reads before committing hundreds of millions of dollars.
-
-At Mehra & Cole, diligence on a mid-market deal follows a pattern that has barely changed in fifteen years. A partner leads. A senior associate runs the day-to-day work. Four to six junior associates divide the data room between them and review each document in turn, recording what they find in a shared spreadsheet the firm calls the tracker, with one row per document and a column for each type of issue. The senior associate consolidates the tracker, the partner reviews the findings that look material, and the report is drafted from the result. By the firm's own estimate, the median time from data room access to a partner-ready red-flag report is eighteen working days. Much of that time is spent at night.
+This pipeline has barely changed in fifteen years. Every problem in the case sits somewhere along it.
 
 ## What the firm asked for
 
-The introduction came through a private equity operating partner who had worked with both firms. Arjun Sen, the engagement partner at Inherent Labs, an applied AI company that embeds engineers inside its clients' businesses, spoke to Anjali Mehra by video on a Thursday afternoon. She did not spend long on pleasantries.
+The request arrived as a solution. Arjun Sen, engagement partner at Inherent Labs, an applied AI company that embeds engineers with its clients, was introduced through a PE operating partner and spoke to Anjali by video.
 
-"I'll be direct," she said. "We need an AI tool for due diligence. Every firm our size is buying one, our clients ask about it in every pitch, and the one we bought two years ago is shelfware. I want something that works. How quickly can you put it in?"
+"I'll be direct," she said. "We need an AI tool for due diligence. Every firm our size is buying one, and the one we bought two years ago is shelfware. How quickly can you put it in?"
 
 "Before I answer that," Arjun said, "what would be different in a year if it worked?"
 
-She paused for long enough that he wondered whether the connection had dropped. "We would stop losing pitches," she said. "And we would stop working for free."
+After a long pause: "We would stop losing pitches. And we would stop working for free."
 
-He asked about the pitches. The most recent, she explained, had been for Kestrel Ridge Capital, a fund the firm had advised for eight years. Kestrel had given its latest platform acquisition to a larger firm that promised a red-flag report in five working days. Mehra & Cole had quoted three weeks. "We weren't even second," she said.
+- **The lost pitch:** Kestrel Ridge Capital, a client for eight years, gave its latest platform acquisition to a larger firm that promised a red-flag report in five working days. Mehra & Cole had quoted three weeks. "We weren't even second."
+- **The counteroffer:** a two-week paid diagnostic first. "I asked you for a tool and you are offering me a study." Arjun: "I'm offering to make sure we build the right tool." She agreed, if it took two weeks, not six.
+- **The loose thread:** "There is one more reason I want this done properly, and I'd rather not discuss it on a video call. I'll tell whoever you send." Arjun underlined it.
 
-Arjun proposed a two-week paid diagnostic before any proposal: time with the people who did the work, a look at how recent deals had actually run, and a written account of the problem. Anjali was not pleased. "I asked you for a tool and you are offering me a study."
-
-"I'm offering to make sure we build the right tool," he said. "If, after two weeks, the answer is that you need the same thing everyone else bought, I'll tell you, and you can save your money."
-
-She agreed on condition that the diagnostic took two weeks and not six. Near the end of the call she added something he wrote down and underlined. "There is one more reason I want this done properly," she said, "and I'd rather not discuss it on a video call. I'll tell whoever you send."
+Arjun turned "a tool" into "what would be different." Her answer names two branches of the problem, speed and economics. The diagnostic exists to find the rest.
 
 ## Five conversations
 
-Arjun spent the next two weeks in the firm's Mumbai office and on early-morning calls with New York. Five of his conversations shaped everything that followed.
+Over two weeks in Mumbai and on calls with New York, five conversations shaped everything. Each showed a different face of one problem.
 
-The first was with Vikram Rao, head of the Corporate and M&A practice and a partner for twenty-two years. Vikram's concern was not speed. It was trust.
+### Vikram Rao: trust
 
-"The tracker comes to me with eight hundred rows," he said. "Six hundred of them say 'no issue'. I don't trust those six hundred, so I re-read the contracts that matter myself, which means I am doing a junior associate's job at one in the morning."
+- **Role:** head of Corporate and M&A; partner for twenty-two years.
+- **Concern:** "The tracker comes to me with eight hundred rows. Six hundred of them say 'no issue'. I don't trust those six hundred," so he re-reads key contracts himself at one in the morning.
+- **The logistics deal:** the target's largest customer (eighteen percent of revenue) had its master services agreement marked clean. A 2021 amendment letter in another folder gave it a change-of-control termination right. The buyer's commercial team found it two weeks before signing. A price adjustment and special indemnity saved the deal, but the fund's general counsel called Anjali. "We didn't lose the client. We lost the benefit of the doubt."
+- **Materiality:** "Materiality depends on the deal. A non-compete is a footnote for a strategic buyer and a red flag for a fund planning a roll-up in the same sector. That judgment lives in my head and in the heads of maybe four other partners. It does not reach the juniors until I'm reading their work at the end." Arjun thought this the most important thing anyone said.
 
-He told Arjun about a deal the previous year. The firm had acted for a fund buying a logistics software company. The target's largest customer accounted for eighteen percent of its revenue, and the master services agreement with that customer had been reviewed and marked clean. What nobody on the deal team had found was a 2021 amendment letter, filed in a different folder of the data room, that gave the customer the right to terminate on a change of control. The buyer's commercial team discovered it during customer calls two weeks before signing. The deal survived with a price adjustment and a special indemnity, but the fund's general counsel called Anjali personally.
+### Priya Nair: people and process
 
-"We didn't lose the client," Vikram said. "We lost the benefit of the doubt."
+- **Role:** seventh-year senior associate; has run more diligence than anyone else.
+- **Juniors:** half of each team is new to diligence. "I spend the first three days teaching them what a change of control clause looks like. By the time they're good, they leave." About a third of second- to fourth-years leave yearly.
+- **Data rooms:** scans named scan_0041.pdf, amendments filed apart from their agreements, one agreement in three versions with no sign of which was signed, land records in Hindi and Marathi. "Half my team's time isn't legal analysis. It's finding things."
+- **The old tool:** two hundred highlights a contract. "The juniors stopped opening it within a month, and the partners never trusted it in the first place."
 
-He made a second point that Arjun came to think of as the most important thing anyone said in the diagnostic. "Materiality depends on the deal. A non-compete is a footnote for a strategic buyer and a red flag for a fund planning a roll-up in the same sector. That judgment lives in my head and in the heads of maybe four other partners. It does not live in the checklist, and it does not reach the juniors until I'm reading their work at the end."
+### Sunita Kulkarni: money
 
-The second conversation was with Priya Nair, a seventh-year senior associate who had run the day-to-day work on more diligence exercises than anyone else in the firm. Her concern was people and process.
+- **Role:** chief operating officer.
+- **Fee shift:** about seventy percent of PE diligence mandates are now capped or fixed fee; three years ago most were hourly.
+- **Realization** (recorded time actually billed and collected): down from eighty-nine to sixty-eight percent. "On a mandate capped at $120,000, we routinely record $170,000 of time. The difference is written off."
+- **No exit:** diligence is about thirty percent of practice hours and the least profitable, but "if we stop doing diligence, we stop getting the deals."
 
-"On every deal I get four or five juniors, and half of them have never done a diligence," she said. "I spend the first three days teaching them what a change of control clause looks like. By the time they're good, they leave." Attrition among associates in their second to fourth years was running at about a third a year, most of them leaving for in-house roles.
+### Rohan Desai: what cannot happen
 
-She described the data rooms themselves as a large part of the problem. Contracts arrived as scanned PDFs with file names like scan_0041.pdf. Amendments were filed separately from the agreements they amended. The same agreement appeared in three versions with no indication of which was signed. State-level registrations and land records arrived in Hindi and Marathi. "Half my team's time isn't legal analysis," she said. "It's finding things."
+- **Role:** chief information officer.
+- **Constraints:** confidentiality agreements on every data room; some clients forbid external tools; some Indian clients require data to stay in India; ethical walls between deal teams; every access logged.
+- **Red line:** "If any vendor's model trains on a client's data room, we are finished. I need that in writing, and I need to be able to prove it to a client's auditor."
+- **Fatigue:** the last vendor's security review took four months, "for something nobody ended up using."
 
-She was equally blunt about the tool the firm had bought two years earlier. "It highlighted every clause that mentioned assignment. Two hundred highlights a contract. The juniors stopped opening it within a month, and the partners never trusted it in the first place."
+### Daniel Cole: the report
 
-The third conversation was with Sunita Kulkarni, the firm's chief operating officer, and it was the one that explained why Anjali had said the firm was working for free. Three years earlier, most private equity clients had paid for diligence by the hour. Now about seventy percent of the firm's private equity diligence mandates carried a fixed fee or a cap. The firm's realization on diligence work, the share of recorded time it actually billed and collected, had fallen from eighty-nine percent to sixty-eight percent over the same period.
+- **Role:** name partner, New York.
+- **Context:** US clients now ask about AI in requests for proposals. The American Bar Association's 2024 formal opinion on generative AI requires lawyers to understand their tools, protect confidentiality when using them, and bill fairly for work a tool made faster.[^aba-512]
+- **Tension:** "Our clients will want us to use AI, and they will want the savings. The real question is whether we keep any of them."
+- **Requirement:** a report a New York general counsel will sign off on. "Not a spreadsheet. Not a dashboard. A report."
 
-"On a mandate capped at $120,000, we routinely record $170,000 of time," she said. "The difference is written off, and it comes out of the partners' pockets." Diligence now accounted for about thirty percent of the practice's hours and was its least profitable work. The firm could not simply do less of it. "Diligence is how we get the rest of the deal," she said. "The share purchase agreement, the negotiation, the closing. Those are profitable. If we stop doing diligence, we stop getting the deals."
+### What the five add up to
 
-The fourth conversation was with Rohan Desai, the chief information officer, who spoke mostly about what could not happen. Data rooms belonged to the target company and were shared under strict confidentiality agreements. Some clients prohibited uploading their documents to any external tool. Some Indian clients required their data to stay in India. Access within the firm had to respect the ethical walls that kept deal teams separated where there was a potential conflict, and every access to a client document had to be logged.
+Laid on the pipeline, the concerns connect. Priya's juniors lose time at the front; Vikram's judgment arrives only at the end. Sunita pays for the gap in write-offs. Rohan sets the walls, and Daniel defines what must come out.
 
-"If any vendor's model trains on a client's data room, we are finished," he said. "I need that in writing, and I need to be able to prove it to a client's auditor." He was also tired. "The last vendor took four months to clear our security review, for something nobody ended up using. I'm not doing that again."
-
-The fifth conversation, by video from New York, was with Daniel Cole. American clients were now asking about AI use in their requests for proposals, and the American Bar Association's 2024 formal opinion on generative AI had made the professional obligations explicit: lawyers had to understand the tools they used, protect client confidentiality when using them, and bill fairly for work a tool had made faster.[^aba-512]
-
-"Our clients will want us to use AI, and they will want the savings," Daniel said. "The real question is whether we keep any of them." He had one more requirement. "Whatever you build has to end in a report that a New York general counsel will sign off on. Not a spreadsheet. Not a dashboard. A report."
-
-Arjun noticed what was missing from his notes as clearly as what was in them. He had not sat with any of the junior associates who did the first-pass review, and he had not spoken to anyone on the client side who read the red-flag reports. He recorded both as open questions.
+Two gaps remained: nobody had sat with a junior doing first-pass review, or met a client who reads the reports.
 
 ## The problem underneath
 
-At the end of the second week Arjun sent Anjali a six-page memo. Its first page did something she had not expected: it declined to recommend a tool.
+Arjun's six-page memo declined to recommend a tool. "We need an AI tool" was a solution; nobody had agreed on the problem.
 
-The memo argued that "we need an AI tool" was a solution, and that the firm had not yet agreed on the problem it was solving. The problem, as the conversations described it, was the firm's diligence model itself. That model converted associate hours into a red-flag report. For fifteen years it had worked because clients paid for the hours and accepted the timeline. Clients now capped the price and compressed the timeline, and the model had no way to produce the same report with fewer hours. Worse, the judgment that decided what mattered on a given deal was held by a handful of partners and applied only at the end, after the hours had already been spent.
+- **The cause:** the diligence model converts associate hours into a report. Clients now cap price and time, and the model cannot do the same with fewer hours. Judgment about what matters arrives only at the end, after the hours are spent.
+- **Economics:** capped fees meet unchanged effort; the difference is written off.
+- **Speed:** eighteen days cannot compete with five.
+- **Reliability:** juniors in disorganized data rooms miss issues (the amendment letter), so partners re-review at night.
+- **Knowledge loss:** every associate who learns diligence and leaves takes the skill along.
+- **Constraints:** Rohan's list, a security review well under four months, and a culture that already rejected one tool.
 
-The memo traced four consequences to that single cause. The economics had deteriorated, because capped fees met unchanged effort and the difference was written off. The firm had lost speed, because eighteen working days could not compete with a promise of five. Reliability suffered, because inexperienced associates searching disorganized data rooms missed issues, as the amendment letter on the logistics deal had shown, and partners compensated by re-reviewing at night. And the firm's knowledge was leaving with its people, because every associate who learned to do diligence well and then left took that skill with them.
-
-It also set out the constraints any answer would have to respect: client confidentiality, data residency for some clients, ethical walls, a complete audit trail, a security review that would not take four months, and a professional culture that had already rejected one tool and would not give a second the benefit of the doubt.
-
-The memo condensed all of this into one sentence, which Anjali later said was the first time she had seen her own problem written down:
+Anjali later said this sentence was the first time she had seen her own problem written down:
 
 > Mehra & Cole cannot deliver a partner-quality red-flag report within the time and fee its private equity clients now demand, because first-pass review depends on inexperienced associates searching disorganized data rooms, and the judgment about what matters is applied only at the end, by a few partners.
 
-Anjali read it twice and called Arjun. "Fine," she said. "Now tell me what you'll actually commit to."
+Every conversation reappears as a consequence or constraint, traced to one cause. Anjali read it twice and called Arjun. "Fine. Now tell me what you'll actually commit to."
 
 ## Writing the statement of work
 
-A **statement of work**, usually shortened to SOW, is the contract that defines an engagement: what will be done, in what phases, by whom, by when, at what cost, and how everyone will know whether it succeeded. Engineers sometimes treat it as paperwork for the commercial team. A forward deployed engineer cannot afford to. The SOW is the document the client will hold you to, and on a difficult day it is the only thing that settles an argument about what was promised.
+A **statement of work** (SOW) defines an engagement: what, in what phases, by whom, by when, at what cost, and how everyone will know it succeeded. It is what the client will hold you to, and on a bad day the only thing that settles what was promised.
 
-The Mehra & Cole SOW took three weeks to agree, mostly because each of the five people Arjun had interviewed wanted something different from it.
+It took three weeks to agree; each stakeholder wanted something different.
 
-Anjali wanted the five-day turnaround that had won Kestrel's mandate written in as a promise. Arjun refused. "I won't put a number in the SOW that neither of us can check today," he said. "I'll put the measurement in the SOW and let the numbers decide." Vikram insisted that any measure of quality be judged against what partners had actually flagged on real deals, not against a vendor's benchmark. Sunita wanted associate hours measured, because hours were what she wrote off. Rohan attached a security schedule and made the start of any live work conditional on it. Daniel asked that the final report remain entirely the work of the firm's lawyers.
+- **Anjali:** wanted Kestrel's five days written in. Arjun refused: "I won't put a number in the SOW that neither of us can check today. I'll put the measurement in the SOW and let the numbers decide."
+- **Vikram:** judge quality against what partners actually flagged on real deals, not a vendor benchmark.
+- **Sunita:** measure associate hours, because hours are what she writes off.
+- **Rohan:** a security schedule, with live work conditional on it.
+- **Daniel:** the final report stays entirely the work of the firm's lawyers.
 
-The agreed SOW ran to eleven pages. Its core read as follows:
+The SOW ran to eleven pages. Its core:
 
 > **Statement of Work No. 1: AI-Assisted Due Diligence Pilot**
 >
@@ -118,36 +143,37 @@ The agreed SOW ran to eleven pages. Its core read as follows:
 >
 > **Commercial terms.** Fixed fee for phases 1–3. Any scale-up priced under a separate SOW.
 
+Every demand is visible in the text: Vikram's twelve closed deals, Sunita's hours, Rohan's security clause, Daniel's exclusion of report drafting. Only Anjali's five days became a measurement instead of a promise.
+
 ## What was promised, and what was not
 
-Above the SOW sat a single business goal that every member of the steering committee signed: to deliver a partner-ready red-flag report on a mid-market deal in seven working days instead of the current eighteen, with no loss in the capture of material issues, within the fee caps private equity clients now set. The pilot was not expected to achieve that goal in twelve weeks. It was expected to show, with evidence, whether the goal was reachable.
+Above the SOW sits one business goal, signed by the steering committee. The pilot only has to show, with evidence, whether it is reachable.
 
-The SOW defined that evidence in four success criteria:
+- **Business goal:** a partner-ready red-flag report on a mid-market deal in seven working days instead of eighteen, with no loss in capture of material issues, within PE fee caps.
+- **Success criteria:**
+  1. On the twelve closed deals, surface at least 95 percent of the issues the reviewing partner classified as critical, each linked to the clause it relies on.
+  2. On the two pilot deals, cut associate first-pass hours per hundred contracts by at least 40 percent against baseline.
+  3. On the two pilot deals, deal teams use the system for first-pass review of at least 80 percent of in-scope contracts.
+  4. Pass the firm's security review before any live client data is processed.
+- **Not promised:** removing partner review, drafting the report, fewer associates, zero errors. A lawyer checks every finding before it reaches a client.
 
-1. On the twelve closed deals, surface at least 95 percent of the issues that the reviewing partner classified as critical in the final report, with every finding linked to the clause it relies on.
-2. On the two pilot deals, reduce associate first-pass hours per hundred contracts by at least 40 percent against the baseline.
-3. On the two pilot deals, have the deal teams use the system for first-pass review of at least 80 percent of in-scope contracts.
-4. Pass the firm's security review before any live client data is processed.
-
-The SOW was equally explicit about what was not promised. It did not promise to remove partner review, to draft the red-flag report, to reduce the number of associates or to make no errors. Every finding the system produced would be checked by a lawyer before it reached a client.
-
-Anjali pushed back once more at the final review. "You are promising me less than the firm that beat us."
+"You are promising me less than the firm that beat us," Anjali said at the final review.
 
 "I'm promising you something you can check," Arjun said. "They promised five days. In six months, ask Kestrel what they got."
 
-It was Vikram who settled it. "I'd rather sign this than the other thing," he said. Anjali signed the following morning.
+Vikram settled it: "I'd rather sign this than the other thing." Anjali signed the next morning. The criteria map onto the problem: capture for reliability, hours for economics, adoption for a firm that shelved its last tool, security for Rohan.
 
 ## Your assignment
 
-You are a forward deployed engineer at Inherent Labs, and on the Friday after the SOW was signed, Arjun called to tell you the engagement was yours.
+You are a forward deployed engineer at Inherent Labs. On the Friday after signing, Arjun told you the engagement was yours.
 
-The assignment was straightforward to state. You would be embedded in the Mumbai office four days a week for twelve weeks. You would be accountable for delivering the pilot against the SOW: the baseline, the build, the supervised pilot and the evidence for the decision gate. Priya Nair would be your day-to-day counterpart. You would report to Arjun, and you would present to the steering committee every two weeks.
-
-Arjun sent you the briefing pack that evening: the diagnostic memo, the signed SOW, his notes from the five conversations and a short list of open questions. The list was more useful than anything else in the pack. Nobody had yet sat with the junior associates who did the first-pass review. Nobody had seen how a private equity client actually read a red-flag report. The eighteen-day median and the hours behind it were the firm's own estimates, not measurements. And at the bottom, underlined twice, was the reason Anjali had refused to give over video.
+- **The role:** embedded in Mumbai four days a week for twelve weeks, accountable for the pilot against the SOW.
+- **Your people:** Priya day to day; you report to Arjun and present to the steering committee fortnightly.
+- **The pack:** the memo, the SOW, Arjun's notes and a list of open questions (see the reference below), the most useful thing in it. At the bottom, underlined twice: the reason Anjali would give only in person.
 
 "The SOW tells you what we promised," Arjun said. "It doesn't tell you how. That part is yours." He paused. "Anjali wants to see you at nine on Monday. She said there's something she wants to tell you in person."
 
-The engagement now had a problem, a promise and an owner. What it did not yet have was anyone on the Inherent Labs side who had sat across from the managing partner and explained, at the level of mechanism, what the technology she was buying actually does and why it fails. On Monday morning, that would be the first thing she asked for.
+The engagement has a problem, a promise and an owner. Nobody at Inherent Labs has yet explained to the managing partner, at the level of mechanism, what the technology she is buying actually does and why it fails. On Monday morning, that will be the first thing she asks for.
 
 ---
 
